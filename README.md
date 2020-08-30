@@ -2,53 +2,76 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/bstnbuck/Simple-Go-Blockchain/blob/master/LICENSE)
 # Simple V Blockchain
 
->**Not all functions are implemented yet! This program should only show the principle of blockchains.**
+>**Entering some transactions while executing now works! This program should only show the principle of blockchains.**
 
 The Blockchain is written in Vlang. As hash algorithm is used SHA-512.
 It is also written in Go: [**Simple Go Blockchain**](https://github.com/bstnbuck/Simple-Go-Blockchain)
 
 ## Requirements
-- C-Compiler
 - Installed [V-Compiler](https://github.com/vlang/v)
 
 ## Usage
 `git clone https://github.com/bstnbuck/Simple-V-Blockchain.git`
 
-##### Execute:
+##### Execute the Blockchain:
 * If you want to execute the Blockchain run the program in console with `v run .`.
-* After that enter the number of leading hex-nulls the hash should have. Should like this: **4**
+* After that enter the number of leading hex-nulls the hash should have. Should look like this: **4**
     => Otherwise an error will be printed and the program exits.
 
-##### Example output:
+###### Example output:
 ```
 Welcome to the first Blockchain written in Vlang!
 Starting... How much leading hex nulls? 4
-How many blocks should be generated? 1
-Started: 2020-08-10 16:24:26
+How many blocks should be generated? 2
+Started: 2020-08-30 20:32:20
 
-New Block Index:1 Timestamp:2020-08-10 16:24:26
-HashPoW:0000cb96de53fa45e5f08af7efd534e8f0ea5887d73ef590d6f39486775defebdf132153d4367b4d26a1b95cc113e07c8dcd29b2e98b5a6cb31d8b8acc710d97
-Text&Nonce:W5csIJld13552139115523017255
-PrevHashHeader:3d590ece3c48475187330ff4de787a1a6ad36420940cbb16833236f4b8f4e33e086fea4f573c9e439e5f986894bc6603b73e7fbc983106661f9628065a670405
-HashHeader:14ce401125c83a6f914df58a545595b3589ca3fe6ea36caf2095fc0856fc02453a24cb23fc9f82829653b41e77760c73998f369d1a5853a046b3a0fef65b113a
+New Block Index:1 Timestamp:2020-08-30 20:32:20
+HashPoW:000004de82aa861c494fc9d28bca98035fc829eec8c78b807cc73dead2d1e4b3086d856554781a1eba245fc6356db6ca472e0769fd0e65338eb6c9662551d5f5
+Text&Nonce:W5EsII9d10693428218265332150
+PrevHashHeader:e21b0b95ceca64fd49a17b04507e34ab77896855cffe5122c195d818d9ca393aedcc4d5644a2001cabd4ddcc2d57a88100b335d6ab90b01bb6ed7e9700b33804
+BlockHash:56d73c8ba17aee888430c838d275f2cd41486378466a1edb972b02b23cb1f2479ea828249bb17e467bcb554ec6fa831aefe983da1e5e8b6aaced4700f12a5c5a
 Data:
- W4wsIGtd W3osIC1d Wx4sIBpd W4AsIDVd W/ksIEBd
- W9csIHxd W+ksIBNd W7csIOBd W2EsIC5d W3ksIFBd
+New Transaction Timestamp:2020-08-30 20:26:00
+ From:W38sILJd To:W78sIBNd
+ Transfer:1.96292
+New Transaction Timestamp:2020-08-30 20:26:00
+ From:W78sIKBd To:W1AsID1d
+ Transfer:12.9919
+New Transaction Timestamp:2020-08-30 20:26:00
+ From:WwosIJ1d To:W6ksIJRd
+ Transfer:31.3365
+New Transaction Timestamp:2020-08-30 20:26:00
+ From:W0EsIBld To:WwwsIFpd
+ Transfer:32.717
+New Transaction Timestamp:2020-08-30 20:26:00
+ From:W9AsIHFd To:W9ksIDFd
+ Transfer:75.9
+
 >> Block is valid! <<
 
-Stopped: 2020-08-10 16:24:26
-Time to make new Block: 411ms => 0sec
-Count: 18976
-Hashrate: 46 H/ms (Hashes per millisecond)
-
+Stopped: 2020-08-30 20:32:20
+Time to make new Block: 161ms => 0sec
+Count: 7826
+Hashrate: 48 H/ms (Hashes per millisecond)
 
 All Blocks generated! Press ENTER to continue...
 ```
 
+##### Execute addTransaction:
+* If you want to make Transactions switch into addTransaction and run the program in console with `v run .`.
+    => Enter the number of Transactions you want wo generate.
+
+###### Example output:
+```
+Starting... Generate transactions automatically? [1] = automatically, [99] = Stop
+1
+[AUTO] How many Transactions should be generated?
+10
+[AUTO] Finished! Any more? [1] = yes [2] = no
+2
+Press ENTER to continue...
+```
+
 ### Information
-* The Code is self-explanatory commented.
 * The Proof-of-Work function uses a string with a incremented Nonce as hash operators.
 * **Important! Since V has no garbage collection, the consumption of RAM is constantly increasing, this should be observed permanently.** I will look for a solution in the near future.
-
-### The following is still being implemented
-* Entering some transactions while executing

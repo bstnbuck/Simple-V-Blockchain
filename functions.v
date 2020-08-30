@@ -38,3 +38,40 @@ fn get_random_string() string {
 	random_string := base64.encode(bytes.str())
 	return random_string
 }
+
+// adds last 10 generated transaction with lifo-principle (last in -> first out) to the payload of new generated block
+fn get_transactions() string {
+	filename := 'addTransaction/payload.gop'
+	transfers := os.read_file(filename) or {
+		println(err)
+		return ''
+	}
+	mut output := ''
+	lines := transfers.split_into_lines()
+	mut counter := 15
+	mut text := []string{}
+	// scan first 10 transactions (27 lines) into output string, all others that follow save to another variable
+	if lines.len < counter {
+		counter = lines.len
+	}
+	mut progress := 0
+	for progress < counter {
+		output += lines[progress] + '\n'
+		progress++
+	}
+	text = lines[counter..lines.len]
+	// create file new (clear it) and move all others that follow after the 10 transactions into it
+	os.create(filename) or {
+		println(err)
+		return ''
+	}
+	mut file := os.open_append(filename) or {
+		println(err)
+		return ''
+	}
+	for i in 0 .. text.len {
+		file.write(text[i] + '\n')
+	}
+	file.close()
+	return output
+}

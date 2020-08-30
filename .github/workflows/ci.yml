@@ -19,3 +19,5 @@ jobs:
         make
     - name: build Blockchain
       run: ./v/v .
+    - name: build addTransaction
+      run: ./v/v addTransaction/main.v
