@@ -8,7 +8,7 @@ pub mut:
 	hash_pow         string
 	text_nonce_pow   string
 	prev_hash_header string
-	hash_header      string
+	block_hash       string
 	payload          string
 }
 
@@ -19,8 +19,7 @@ fn make_block(nulls string, mut blockchain []Block) (string, Block, u64) {
 	block.hash_pow, block.text_nonce_pow, count = pow(text, nulls)
 	block.index = i64(blockchain.len)
 	block.timestamp = time.now().str()
-	block.prev_hash_header = blockchain[blockchain.len - 1].hash_header
-	block.hash_header = make_block_hash(block)
+	block.prev_hash_header = make_last_block_hash_header(blockchain[blockchain.len - 1])
 	mut payload := ''
 	mut i := 1
 	for i <= 10 {
@@ -31,19 +30,25 @@ fn make_block(nulls string, mut blockchain []Block) (string, Block, u64) {
 		i++
 	}
 	block.payload = payload
-	output := 'New Block Index:$block.index Timestamp:$block.timestamp \nHashPoW:$block.hash_pow \nText&Nonce:$block.text_nonce_pow \nPrevHashHeader:$block.prev_hash_header \nHashHeader:$block.hash_header \nData:\n$block.payload'
+	block.block_hash = make_block_hash(block)
+	output := 'New Block Index:$block.index Timestamp:$block.timestamp \nHashPoW:$block.hash_pow \nText&Nonce:$block.text_nonce_pow \nPrevHashHeader:$block.prev_hash_header \nBlockHash:$block.block_hash \nData:\n$block.payload'
 	return output, block, count
 }
 
 fn make_block_hash(block Block) string {
 	return sha512.hexhash(block.index.str() + block.timestamp.str() + block.hash_pow + block.text_nonce_pow +
-		block.prev_hash_header)
+		block.prev_hash_header + block.payload)
+}
+
+fn make_last_block_hash_header(block Block) string {
+	return sha512.hexhash(block.index.str() + block.timestamp.str() + block.hash_pow + block.text_nonce_pow +
+		block.prev_hash_header + block.block_hash)
 }
 
 fn is_new_block_valid(new_block Block, blockchain []Block) bool {
 	last_block := blockchain[blockchain.len - 1]
-	if last_block.hash_header == new_block.prev_hash_header &&
-		last_block.index + 1 == new_block.index && new_block.hash_header == make_block_hash(new_block) {
+	if make_last_block_hash_header(last_block) == new_block.prev_hash_header &&
+		last_block.index + 1 == new_block.index && new_block.block_hash == make_block_hash(new_block) {
 		return true
 	}
 	return false
@@ -59,6 +64,6 @@ fn make_genesis_block() Block {
 		prev_hash_header: '0'
 		payload: text
 	}
-	block.hash_header = make_block_hash(block)
+	block.block_hash = make_block_hash(block)
 	return block
 }
