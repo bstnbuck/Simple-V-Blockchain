@@ -94,6 +94,6 @@ fn get_random_string() string {
 
 // generates some random floats
 fn get_random_float() f32 {
-	random := crand.f32n(100)
+	random := rand.f32n(100)
 	return random
 }
