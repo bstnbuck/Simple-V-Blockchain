@@ -19,11 +19,11 @@ fn main() {
 	}
 	mut stop := false
 	for stop == false {
-		mode := strconv.atoi(os.input('Starting... Generate transactions automatically? [1] = automatically, [99] = Stop\n'))
+		mode := strconv.atoi(os.input('Starting... Generate transactions automatically? [1] = automatically, [99] = Stop\n')) ?
 		if mode == 1 {
-			mut times := strconv.atoi(os.input('[AUTO] How many Transactions should be generated? \n'))
+			mut times := strconv.atoi(os.input('[AUTO] How many Transactions should be generated? \n')) ?
 			run_auto(times, filename)
-			again := strconv.atoi(os.input('[AUTO] Finished! Any more? [1] = yes [2] = no\n'))
+			again := strconv.atoi(os.input('[AUTO] Finished! Any more? [1] = yes [2] = no\n')) ?
 			if again == 1 {
 				continue
 			}
@@ -45,10 +45,18 @@ fn run_auto(times int, filename string) {
 		println(err)
 		return
 	}
+
 	// generate random transactions
 	transactions := generate_transactions(times)
+
 	// append them to the file
-	add_transaction(mut file, transactions)
+	// add_transaction(mut file, transactions)
+	for output in transactions {
+		file.write_str(output) or {
+			println(err)
+			return
+		}
+	}
 	file.close()
 }
 
@@ -60,8 +68,7 @@ fn generate_transactions(times int) []string {
 		from := get_random_string()
 		to := get_random_string()
 		transfer := get_random_float()
-		output <<
-			'New Transaction Timestamp:$time_now\n From:$from To:$to\n Transfer:$transfer\n'
+		output << 'New Transaction Timestamp:$time_now\n From:$from To:$to\n Transfer:$transfer\n'
 		i++
 	}
 	return output
@@ -69,16 +76,11 @@ fn generate_transactions(times int) []string {
 
 // adds transactions to file
 fn add_transaction(mut file os.File, transaction []string) {
-	for output in transaction {
-		file.write(output)
-	}
 }
 
 // generates some random bytes for random string
 fn get_random_bytes(n int) ?[]byte {
-	random_bytes := crand.read(n) or {
-		return error(err)
-	}
+	random_bytes := crand.read(n) or { return err }
 	return random_bytes
 }
 
@@ -88,7 +90,7 @@ fn get_random_string() string {
 		println(err)
 		return ''
 	}
-	random_string := base64.encode(bytes.str())
+	random_string := base64.encode_str(bytes.str())
 	return random_string
 }
 

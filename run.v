@@ -21,12 +21,13 @@ fn run(times int, nulls string, mut blockchain []Block) {
 			println('\n' + output + '\n>> Block is valid! <<\n')
 			duration := timestamp_stop.unix_time_milli() - timestamp_start.unix_time_milli()
 			print('Stopped: ' + timestamp_stop.str())
-			output_duration := '\nTime to make new Block: ' + duration.str() + 'ms => ' + (duration /
-				1000).str() + 'sec'
+			output_duration := '\nTime to make new Block: ' + duration.str() + 'ms => ' +
+				(duration / 1000).str() + 'sec'
 			println(output_duration)
 			write_to_blockchain_file(filename, output_duration)
 			print('Count: ' + count.str())
-			hashrate := '\nHashrate: ' + calculate_hashrate(duration, count) + ' H/ms (Hashes per millisecond)\n\n'
+			hashrate := '\nHashrate: ' + calculate_hashrate(duration, count) +
+				' H/ms (Hashes per millisecond)\n\n'
 			println(hashrate)
 			write_to_blockchain_file(filename, hashrate)
 			i++

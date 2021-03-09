@@ -2,16 +2,19 @@ import os
 import crypto.rand
 import encoding.base64
 
-fn calculate_hashrate(duration, count u64) string {
+fn calculate_hashrate(duration u64, count u64) string {
 	return (count / duration).str()
 }
 
-fn write_to_blockchain_file(filename, output string) {
+fn write_to_blockchain_file(filename string, output string) {
 	mut file := os.open_append(filename) or {
 		println(err)
 		return
 	}
-	file.write(output)
+	file.write_str(output) or {
+		println(err)
+		return
+	}
 	file.close()
 }
 
@@ -24,9 +27,7 @@ fn make_string_nulls(nulls int) string {
 }
 
 fn get_random_bytes(n int) ?[]byte {
-	random_bytes := rand.read(n) or {
-		return error(err)
-	}
+	random_bytes := rand.read(n) or { return err }
 	return random_bytes
 }
 
@@ -35,7 +36,7 @@ fn get_random_string() string {
 		println(err)
 		return ''
 	}
-	random_string := base64.encode(bytes.str())
+	random_string := base64.encode(bytes)
 	return random_string
 }
 
@@ -50,6 +51,7 @@ fn get_transactions() string {
 	lines := transfers.split_into_lines()
 	mut counter := 15
 	mut text := []string{}
+
 	// scan first 10 transactions (27 lines) into output string, all others that follow save to another variable
 	if lines.len < counter {
 		counter = lines.len
@@ -60,6 +62,7 @@ fn get_transactions() string {
 		progress++
 	}
 	text = lines[counter..lines.len]
+
 	// create file new (clear it) and move all others that follow after the 10 transactions into it
 	os.create(filename) or {
 		println(err)
@@ -70,7 +73,10 @@ fn get_transactions() string {
 		return ''
 	}
 	for i in 0 .. text.len {
-		file.write(text[i] + '\n')
+		file.write_str(text[i] + '\n') or {
+			println(err)
+			return ''
+		}
 	}
 	file.close()
 	return output

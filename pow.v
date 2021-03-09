@@ -1,7 +1,7 @@
 import crypto.sha512
 import rand
 
-fn pow(text, nulls string) (string, string, u64) {
+fn pow(text string, nulls string) (string, string, u64) {
 	mut nonce := rand.u64()
 	mut count := u64(0)
 	mut hashthex := ''
@@ -10,8 +10,9 @@ fn pow(text, nulls string) (string, string, u64) {
 		if hashthex.starts_with(nulls) {
 			return hashthex, text + nonce.str(), count
 		}
+
 		// println(hashthex)		// DEBUG
-		hashthex.free()
+		// hashthex.free()
 		nonce++ // increment nonce and counter by 1
 		count++
 	}

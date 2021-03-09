@@ -1,11 +1,75 @@
-New Block Index:1 Timestamp:2020-08-30 15:26:26 
-HashPoW:00000b198e781166b55ec71087b8baa387d80b5ba92bd42bd2fc05a5992131232667e62a86f90df3a278e4d62f0c5488408784998ba1de9f000ded5babd97253 
-Text&Nonce:W/QsIAFd12192719230603432025 
-PrevHashHeader:94072804133e1bfe97fb0f7fc260044a36958d99a91dd7b3ab8ad0049dfd40eeb187bc672de1ffc303233f3707cb6db78296e45cbcf10930ace9f227609e4cbb 
-HashHeader:b204eafa4617359ed4fbdea16f26d276730756effb07de1bc17e67bd0fd6803bcb5076118909433a882f889957d4960a28103813c297b2411e1b9be9085f5ddb 
+New Block Index:1 Timestamp:2021-03-10 00:24:22 
+HashPoW:0000ebcfa8220372ca81aa96ea9f06d41e55bdd5f6b0caa5e44f27852a23858d91848f390bfe796fe88bdbf4219e6459f53d762cfc8937f4a27d30a5e93d0aeb 
+Text&Nonce:KDE=60432396524758711 
+PrevHashHeader:83c5eafe6b3438bba3e64484c532ba08e46d5e63682f4ff56cfa684e1654896f7df4d3939bc88fa620e54949576b1992238c235a745a016f693c39bfb8df4ea7 
+BlockHash:074cb412e86a9e1ec0adf5524dfa8cb1f50b6670889a5bc8f7a455f51f1a80079279b6018ce8d983fc95fb5c2a574ac1634f080ea8eb5cca88da59d1caee72f0 
 Data:
- W5YsIO9d WywsIMZd W1wsIK5d WyIsILtd W4gsIPxd
- W1osIO1d W4gsIBhd WxUsIKVd W3MsIH5d W44sIFNd
-Time to make new Block: 16990ms => 16sec
-Hashrate: 49 H/ms (Hashes per millisecond)
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4MTIsIHdd To:WzB4MGUsICtd
+ Transfer:18.3794
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:W0QsIDB4YjFd To:WzB4OGYsIDB4YWVd
+ Transfer:53.8384
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:W3UsIDB4YjJd To:WzB4MWIsIDB4ZTld
+ Transfer:32.6218
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:W1ssIDB4OWVd To:WzQsICNd
+ Transfer:3.90765
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4ZDUsIHtd To:WzB4ZDMsICpd
+ Transfer:89.7704
+
+Time to make new Block: 6ms => 0sec
+Hashrate: 90 H/ms (Hashes per millisecond)
+
+New Block Index:2 Timestamp:2021-03-10 00:24:22 
+HashPoW:000044280331dd98e93bfafb8dc409b4569079a1409a8a29be2efc04adfdf6cd1dabdf60e400196bb412e8620dc0e7c8644c076635aa99c5a4da06a684d7bf61 
+Text&Nonce:2Vg=15458438518201043340 
+PrevHashHeader:ce5f8b3c4705ad584ab18fdba1adb2e41215b70b22050e3175ec6a7f88f090a924e146091f8ee3745b19fd24e5632cdc322195c853f4e3de7712c52447561cc3 
+BlockHash:df475067b43d4c15cabd7b375cbe7f8c7c49be829532220dcadcde03b5c074b0a67103356d88581ac15dbf4f9518eb35518cfa4750725f9216ec3b17d89622e6 
+Data:
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4YmUsIDB4ZDJd To:WzB4YzMsIDB4YmZd
+ Transfer:98.6303
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4MTQsIDB4YjBd To:WzB4OWIsIDRd
+ Transfer:0.779499
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4OTIsIDB4ZGJd To:W2IsIDB4YjRd
+ Transfer:86.2655
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WygsIHtd To:W3AsIDB4ZDJd
+ Transfer:72.7772
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4ZTQsIF9d To:WyksICRd
+ Transfer:84.8418
+
+Time to make new Block: 80ms => 0sec
+Hashrate: 244 H/ms (Hashes per millisecond)
+
+New Block Index:3 Timestamp:2021-03-10 00:24:23 
+HashPoW:0000597f06a4add30f4ee3b5b7c1229160dd1a8d6b33429ca091a7dcb9289104abaff9029f414e823b824d62c583db87cd3da57487d98cc22b5b82bd7c8ea78e 
+Text&Nonce:C6g=7364279508637736017 
+PrevHashHeader:fd33a5c3c72c99522741181dae569db93a95a9833f3b4fc4034147fd858e603611c95d70d2320661cc39b00fa53a972900b758e12f00dfbed2b7c947136a1431 
+BlockHash:9ae6babf68301c641aa8190006d2b053b2c1ed633066be34e31b3956c8db315e2be795f2722b390c9ac86abfc3300f20b79f50b35ff06ff3f755d748c4046ad2 
+Data:
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4MTEsIDB4YTRd To:WzB4YTMsIDB4OWZd
+ Transfer:52.4553
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:W1AsIDB4OGJd To:WzB4ZTIsIDB4MGZd
+ Transfer:51.0621
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4OWEsIExd To:WzB4YzMsIDB4MTNd
+ Transfer:68.5517
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4MDUsIF9d To:W3csIG5d
+ Transfer:32.4929
+New Transaction Timestamp:2021-03-10 00:24:03
+ From:WzB4YTcsIHZd To:WzB4YjMsIGBcbmBd
+ Transfer:13.1355
+
+Time to make new Block: 51ms => 0sec
+Hashrate: 297 H/ms (Hashes per millisecond)
 

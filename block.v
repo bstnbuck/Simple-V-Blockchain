@@ -38,19 +38,23 @@ fn make_block(nulls string, mut blockchain []Block) (string, Block, u64) {
 }
 
 fn make_block_hash(block Block) string {
-	return sha512.hexhash(block.index.str() + block.timestamp.str() + block.hash_pow + block.text_nonce_pow +
-		block.prev_hash_header + block.payload)
+	return sha512.hexhash(block.index.str() + block.timestamp.str() + block.hash_pow +
+		block.text_nonce_pow + block.prev_hash_header + block.payload)
 }
 
 fn make_last_block_hash_header(block Block) string {
-	return sha512.hexhash(block.index.str() + block.timestamp.str() + block.hash_pow + block.text_nonce_pow +
-		block.prev_hash_header + block.block_hash)
+	return /*
+	block.index.str() + block.timestamp.str() + block.hash_pow +
+		block.text_nonce_pow + block.prev_hash_header +
+	*/
+	sha512.hexhash(block.block_hash)
 }
 
 fn is_new_block_valid(new_block Block, blockchain []Block) bool {
 	last_block := blockchain[blockchain.len - 1]
-	if make_last_block_hash_header(last_block) == new_block.prev_hash_header &&
-		last_block.index + 1 == new_block.index && new_block.block_hash == make_block_hash(new_block) {
+	if make_last_block_hash_header(last_block) == new_block.prev_hash_header
+		&& last_block.index + 1 == new_block.index
+		&& new_block.block_hash == make_block_hash(new_block) {
 		return true
 	}
 	return false
