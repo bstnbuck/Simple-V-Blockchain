@@ -43,11 +43,11 @@ fn make_block_hash(block Block) string {
 }
 
 fn make_last_block_hash_header(block Block) string {
-	return /*
+	/*
 	block.index.str() + block.timestamp.str() + block.hash_pow +
 		block.text_nonce_pow + block.prev_hash_header +
 	*/
-	sha512.hexhash(block.block_hash)
+	return sha512.hexhash(block.block_hash)
 }
 
 fn is_new_block_valid(new_block Block, blockchain []Block) bool {

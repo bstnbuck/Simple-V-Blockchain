@@ -52,7 +52,7 @@ fn run_auto(times int, filename string) {
 	// append them to the file
 	// add_transaction(mut file, transactions)
 	for output in transactions {
-		file.write_str(output) or {
+		file.write_string(output) or {
 			println(err)
 			return
 		}

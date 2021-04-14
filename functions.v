@@ -11,7 +11,7 @@ fn write_to_blockchain_file(filename string, output string) {
 		println(err)
 		return
 	}
-	file.write_str(output) or {
+	file.write_string(output) or {
 		println(err)
 		return
 	}
@@ -73,7 +73,7 @@ fn get_transactions() string {
 		return ''
 	}
 	for i in 0 .. text.len {
-		file.write_str(text[i] + '\n') or {
+		file.write_string(text[i] + '\n') or {
 			println(err)
 			return ''
 		}

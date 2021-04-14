@@ -1,75 +1,75 @@
-New Block Index:1 Timestamp:2021-03-10 00:24:22 
-HashPoW:0000ebcfa8220372ca81aa96ea9f06d41e55bdd5f6b0caa5e44f27852a23858d91848f390bfe796fe88bdbf4219e6459f53d762cfc8937f4a27d30a5e93d0aeb 
-Text&Nonce:KDE=60432396524758711 
-PrevHashHeader:83c5eafe6b3438bba3e64484c532ba08e46d5e63682f4ff56cfa684e1654896f7df4d3939bc88fa620e54949576b1992238c235a745a016f693c39bfb8df4ea7 
-BlockHash:074cb412e86a9e1ec0adf5524dfa8cb1f50b6670889a5bc8f7a455f51f1a80079279b6018ce8d983fc95fb5c2a574ac1634f080ea8eb5cca88da59d1caee72f0 
+New Block Index:1 Timestamp:2021-04-14 17:23:42 
+HashPoW:0000ada4a08bdbdab90e560cdf67576363caaf15c338dea41beee9d63c30562cf8cb13990b5b12fc00644f2a7734ace36118ed8444d19790a74454e3037ee454 
+Text&Nonce:rtM=14289435347288290965 
+PrevHashHeader:a590dc18a01e1481f3915d0299ee9e9450fe5fb2dd83233c63d18a7b071b6bfbb5b41d93abb1a23c33b5c380d1f42bc8dac434c27032980702c70a9ebde44faf 
+BlockHash:66c3690fd3114ae963a6bdc302f40866ce19a3c28314c771d3f2671783f7d5eb434e69f842df19f8beebffaa503b82fb643e48383b06e0235e0ce57e3d1aff40 
 Data:
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4MTIsIHdd To:WzB4MGUsICtd
- Transfer:18.3794
-New Transaction Timestamp:2021-03-10 00:24:03
- From:W0QsIDB4YjFd To:WzB4OGYsIDB4YWVd
- Transfer:53.8384
-New Transaction Timestamp:2021-03-10 00:24:03
- From:W3UsIDB4YjJd To:WzB4MWIsIDB4ZTld
- Transfer:32.6218
-New Transaction Timestamp:2021-03-10 00:24:03
- From:W1ssIDB4OWVd To:WzQsICNd
- Transfer:3.90765
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4ZDUsIHtd To:WzB4ZDMsICpd
- Transfer:89.7704
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WyssIDB4ZDNd To:Wz8sIDB4ODVd
+ Transfer:7.03778
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4YzEsIDhd To:WzB4MTEsIDB4ZjRd
+ Transfer:99.7889
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4YzEsIFxd To:WzB4ZDMsIDB4ZGVd
+ Transfer:83.3053
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4MDQsIDB4OTld To:W14sIDB4YTld
+ Transfer:13.2424
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4OWQsIDB4YmVd To:WzB4YTIsIGBcbmBd
+ Transfer:26.6244
 
-Time to make new Block: 6ms => 0sec
+Time to make new Block: 472ms => 0sec
+Hashrate: 87 H/ms (Hashes per millisecond)
+
+New Block Index:2 Timestamp:2021-04-14 17:23:43 
+HashPoW:0000f611a0d134515b1f89f80c91bcedc5a1f9a241f16f8ce942a4f38ddb3a3ffeea084a19ee513643df17a4bee84908be2031766f75a673de6b2e6f2694c1b0 
+Text&Nonce:s54=8429471885399251325 
+PrevHashHeader:f5804336aced79ec8be5c8e23ea2b068b91b1416071c5e32d3924932a7a8a85ff68ac429465b223bf4311562b6ccccb50aacbb4a6bcfdb61f5c33c745fe60f5a 
+BlockHash:ddb93278820098e2adeefbf72ba0dc878da331c3026085a91ad74bc19cb60779711acd939ac9a588d7ba346b9ef22b78a6c3a08d21b139239ea7df1fec68193f 
+Data:
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4ZTksIDB4ZWNd To:WzB4ODcsIEJd
+ Transfer:94.4509
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WycsIGtd To:WzB4YjAsIFxd
+ Transfer:8.09
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4YTIsIDB4YThd To:WyksICtd
+ Transfer:90.847
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:W0IsIDB4ZGFd To:WzB4ZWEsIDxd
+ Transfer:60.8
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4YWQsICZd To:WzB4ODUsIDB4YjVd
+ Transfer:7.45608
+
+Time to make new Block: 244ms => 0sec
+Hashrate: 85 H/ms (Hashes per millisecond)
+
+New Block Index:3 Timestamp:2021-04-14 17:23:44 
+HashPoW:000016ac6f216f644b75c965dbef277e18c6d3532ac34e423647b01ceb9782f1ef32b87b1d456becee1e518c4ddace00fd04afa42effa53780ac5f9f83281410 
+Text&Nonce:7us=14436825584245821845 
+PrevHashHeader:38001c92078494be86e0b34115bc6e6dba194eedc71d3c1084f13a83d1a0d60c05d7060cfc14d03187e24e7782c4e31fbd14117da7c87ac32a354d76e72a4344 
+BlockHash:913204d443be1a96be7b4b3fbef303051b5d322b1e13009a90ea3c91c3f729fc53a7f29e6f3e607d49e685f40359b73b49f0b07e43851f4fe91016d1e6eaa999 
+Data:
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4ODAsIDB4ODZd To:WyQsIDB4YmZd
+ Transfer:23.5633
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:Wy8sIGVd To:WzB4ZTQsIDB4ZmNd
+ Transfer:17.3804
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4YTUsIDB4ZDBd To:WzB4OGIsIDB4ZTRd
+ Transfer:97.4973
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4Y2IsIDB4OWNd To:W3osIDB4YjVd
+ Transfer:15.5768
+New Transaction Timestamp:2021-04-14 17:22:19
+ From:WzB4ZWIsICJd To:W3MsIEld
+ Transfer:82.392
+
+Time to make new Block: 1451ms => 1sec
 Hashrate: 90 H/ms (Hashes per millisecond)
-
-New Block Index:2 Timestamp:2021-03-10 00:24:22 
-HashPoW:000044280331dd98e93bfafb8dc409b4569079a1409a8a29be2efc04adfdf6cd1dabdf60e400196bb412e8620dc0e7c8644c076635aa99c5a4da06a684d7bf61 
-Text&Nonce:2Vg=15458438518201043340 
-PrevHashHeader:ce5f8b3c4705ad584ab18fdba1adb2e41215b70b22050e3175ec6a7f88f090a924e146091f8ee3745b19fd24e5632cdc322195c853f4e3de7712c52447561cc3 
-BlockHash:df475067b43d4c15cabd7b375cbe7f8c7c49be829532220dcadcde03b5c074b0a67103356d88581ac15dbf4f9518eb35518cfa4750725f9216ec3b17d89622e6 
-Data:
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4YmUsIDB4ZDJd To:WzB4YzMsIDB4YmZd
- Transfer:98.6303
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4MTQsIDB4YjBd To:WzB4OWIsIDRd
- Transfer:0.779499
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4OTIsIDB4ZGJd To:W2IsIDB4YjRd
- Transfer:86.2655
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WygsIHtd To:W3AsIDB4ZDJd
- Transfer:72.7772
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4ZTQsIF9d To:WyksICRd
- Transfer:84.8418
-
-Time to make new Block: 80ms => 0sec
-Hashrate: 244 H/ms (Hashes per millisecond)
-
-New Block Index:3 Timestamp:2021-03-10 00:24:23 
-HashPoW:0000597f06a4add30f4ee3b5b7c1229160dd1a8d6b33429ca091a7dcb9289104abaff9029f414e823b824d62c583db87cd3da57487d98cc22b5b82bd7c8ea78e 
-Text&Nonce:C6g=7364279508637736017 
-PrevHashHeader:fd33a5c3c72c99522741181dae569db93a95a9833f3b4fc4034147fd858e603611c95d70d2320661cc39b00fa53a972900b758e12f00dfbed2b7c947136a1431 
-BlockHash:9ae6babf68301c641aa8190006d2b053b2c1ed633066be34e31b3956c8db315e2be795f2722b390c9ac86abfc3300f20b79f50b35ff06ff3f755d748c4046ad2 
-Data:
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4MTEsIDB4YTRd To:WzB4YTMsIDB4OWZd
- Transfer:52.4553
-New Transaction Timestamp:2021-03-10 00:24:03
- From:W1AsIDB4OGJd To:WzB4ZTIsIDB4MGZd
- Transfer:51.0621
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4OWEsIExd To:WzB4YzMsIDB4MTNd
- Transfer:68.5517
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4MDUsIF9d To:W3csIG5d
- Transfer:32.4929
-New Transaction Timestamp:2021-03-10 00:24:03
- From:WzB4YTcsIHZd To:WzB4YjMsIGBcbmBd
- Transfer:13.1355
-
-Time to make new Block: 51ms => 0sec
-Hashrate: 297 H/ms (Hashes per millisecond)
 

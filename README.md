@@ -10,11 +10,12 @@ It is also written in Go: [**Simple Go Blockchain**](https://github.com/bstnbuck
 ## Requirements
 - Installed [V-Compiler](https://github.com/vlang/v)
 
-## Usage
-`git clone https://github.com/bstnbuck/Simple-V-Blockchain.git`
+## Usage & Build
+* Clone the Repo: `git clone https://github.com/bstnbuck/Simple-V-Blockchain.git`
+* Build with optional Garbage-Collector: ``` v -prod -gc boehm .```
 
 ##### Execute the Blockchain:
-* If you want to execute the Blockchain run the program in console with `v run .`.
+* If you want to execute the Blockchain run the program in console.
 * After that enter the number of leading hex-nulls the hash should have. Should look like this: **4**
     => Otherwise an error will be printed and the program exits.
 
