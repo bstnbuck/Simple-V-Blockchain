@@ -26,7 +26,7 @@ fn run(times int, nulls string, mut blockchain []Block) {
 			println(output_duration)
 			write_to_blockchain_file(filename, output_duration)
 			print('Count: ' + count.str())
-			hashrate := '\nHashrate: ' + calculate_hashrate(duration, count) +
+			hashrate := '\nHashrate: ' + calculate_hashrate(u64(duration), count) +
 				' H/ms (Hashes per millisecond)\n\n'
 			println(hashrate)
 			write_to_blockchain_file(filename, hashrate)

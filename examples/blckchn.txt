@@ -1,75 +1,50 @@
-New Block Index:1 Timestamp:2021-04-14 17:23:42 
-HashPoW:0000ada4a08bdbdab90e560cdf67576363caaf15c338dea41beee9d63c30562cf8cb13990b5b12fc00644f2a7734ace36118ed8444d19790a74454e3037ee454 
-Text&Nonce:rtM=14289435347288290965 
-PrevHashHeader:a590dc18a01e1481f3915d0299ee9e9450fe5fb2dd83233c63d18a7b071b6bfbb5b41d93abb1a23c33b5c380d1f42bc8dac434c27032980702c70a9ebde44faf 
-BlockHash:66c3690fd3114ae963a6bdc302f40866ce19a3c28314c771d3f2671783f7d5eb434e69f842df19f8beebffaa503b82fb643e48383b06e0235e0ce57e3d1aff40 
+New Block Index:1 Timestamp:2022-01-29 12:31:30 
+HashPoW:0000052a98d53011e42ebcd0e653a7dae4826f2556d7325fb757782554667b32d3466c9555f31533664cfe54332d53949703e52d3cb8b22869c941f4c353030b 
+Text&Nonce:ZTY=2400537610693511942 
+PrevHashHeader:7f7a91015bf2aab21b73267f750203930e14597edc7324d5478c602f64dbcd4252638fd4fcdb078747622566eb600a0850a602622bed1293ca3ff775b57642e2 
+BlockHash:41e681fbe2c1e839a4be4ed3b5f63eb7a7347fd4b93f36eab001dffb74670fa8e8132ca01f3e74b40dd064ffd987a70c3528f7df836fcc53c0cbce72ed7fae03 
 Data:
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WyssIDB4ZDNd To:Wz8sIDB4ODVd
- Transfer:7.03778
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4YzEsIDhd To:WzB4MTEsIDB4ZjRd
- Transfer:99.7889
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4YzEsIFxd To:WzB4ZDMsIDB4ZGVd
- Transfer:83.3053
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4MDQsIDB4OTld To:W14sIDB4YTld
- Transfer:13.2424
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4OWQsIDB4YmVd To:WzB4YTIsIGBcbmBd
- Transfer:26.6244
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:WzB4ZTUsIFld To:WzB4YjIsIDB4MTdd
+ Transfer:72.06153
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:W0ssIDB4MDJd To:W0EsIDB4Yzld
+ Transfer:55.81342
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:WzB4ZjAsIGRd To:W3gsIC5d
+ Transfer:83.09029
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:WzMsIDB4Y2Zd To:W1csIDB4ZDdd
+ Transfer:15.29201
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:W0osIDB4ZGFd To:WzB4OWIsIGBd
+ Transfer:48.71656
 
-Time to make new Block: 472ms => 0sec
-Hashrate: 87 H/ms (Hashes per millisecond)
+Time to make new Block: 7645ms => 7sec
+Hashrate: 201 H/ms (Hashes per millisecond)
 
-New Block Index:2 Timestamp:2021-04-14 17:23:43 
-HashPoW:0000f611a0d134515b1f89f80c91bcedc5a1f9a241f16f8ce942a4f38ddb3a3ffeea084a19ee513643df17a4bee84908be2031766f75a673de6b2e6f2694c1b0 
-Text&Nonce:s54=8429471885399251325 
-PrevHashHeader:f5804336aced79ec8be5c8e23ea2b068b91b1416071c5e32d3924932a7a8a85ff68ac429465b223bf4311562b6ccccb50aacbb4a6bcfdb61f5c33c745fe60f5a 
-BlockHash:ddb93278820098e2adeefbf72ba0dc878da331c3026085a91ad74bc19cb60779711acd939ac9a588d7ba346b9ef22b78a6c3a08d21b139239ea7df1fec68193f 
+New Block Index:2 Timestamp:2022-01-29 12:31:44 
+HashPoW:0000063919d25473793ea4bb80229a3fec4e4ae967410900e53f1e2160312b89a23de33e9f335df626c665f00b8c01ed72ae477c5c93f604f824d5f2fae19736 
+Text&Nonce:SLA=18431061869974995546 
+PrevHashHeader:a821d99978e50e12487f4fb93611faee2958ba483dc3d64071846a81921acde11f0b3943ee7e9203b5c7d15c7c6a936844ba54c020359cfdd85131cff146d1b0 
+BlockHash:a4efd4d23e463295cafec5eed8cda5ef8c03a6924f301a6d4e0eebdbe7c37d27cb0f223e366eaeea18403fff66e715321a769da8c4b1183242517f1f85059c00 
 Data:
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4ZTksIDB4ZWNd To:WzB4ODcsIEJd
- Transfer:94.4509
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WycsIGtd To:WzB4YjAsIFxd
- Transfer:8.09
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4YTIsIDB4YThd To:WyksICtd
- Transfer:90.847
-New Transaction Timestamp:2021-04-14 17:22:19
- From:W0IsIDB4ZGFd To:WzB4ZWEsIDxd
- Transfer:60.8
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4YWQsICZd To:WzB4ODUsIDB4YjVd
- Transfer:7.45608
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:WzB4ZDQsIDpd To:W28sIDB4YjJd
+ Transfer:50.73519
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:WyssIDB4MWVd To:WzcsIDB4Yjdd
+ Transfer:8.7416
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:W1EsIFBd To:WzB4YTAsIDJd
+ Transfer:75.36446
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:WzB4ZjgsIDB4YjVd To:WzB4MTUsIFpd
+ Transfer:56.07489
+New Transaction Timestamp:2022-01-29 12:31:02
+ From:WzB4YTIsIHhd To:W3AsIEBd
+ Transfer:75.22391
 
-Time to make new Block: 244ms => 0sec
-Hashrate: 85 H/ms (Hashes per millisecond)
-
-New Block Index:3 Timestamp:2021-04-14 17:23:44 
-HashPoW:000016ac6f216f644b75c965dbef277e18c6d3532ac34e423647b01ceb9782f1ef32b87b1d456becee1e518c4ddace00fd04afa42effa53780ac5f9f83281410 
-Text&Nonce:7us=14436825584245821845 
-PrevHashHeader:38001c92078494be86e0b34115bc6e6dba194eedc71d3c1084f13a83d1a0d60c05d7060cfc14d03187e24e7782c4e31fbd14117da7c87ac32a354d76e72a4344 
-BlockHash:913204d443be1a96be7b4b3fbef303051b5d322b1e13009a90ea3c91c3f729fc53a7f29e6f3e607d49e685f40359b73b49f0b07e43851f4fe91016d1e6eaa999 
-Data:
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4ODAsIDB4ODZd To:WyQsIDB4YmZd
- Transfer:23.5633
-New Transaction Timestamp:2021-04-14 17:22:19
- From:Wy8sIGVd To:WzB4ZTQsIDB4ZmNd
- Transfer:17.3804
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4YTUsIDB4ZDBd To:WzB4OGIsIDB4ZTRd
- Transfer:97.4973
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4Y2IsIDB4OWNd To:W3osIDB4YjVd
- Transfer:15.5768
-New Transaction Timestamp:2021-04-14 17:22:19
- From:WzB4ZWIsICJd To:W3MsIEld
- Transfer:82.392
-
-Time to make new Block: 1451ms => 1sec
-Hashrate: 90 H/ms (Hashes per millisecond)
+Time to make new Block: 14274ms => 14sec
+Hashrate: 238 H/ms (Hashes per millisecond)
 
