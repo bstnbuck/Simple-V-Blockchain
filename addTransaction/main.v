@@ -79,7 +79,7 @@ fn add_transaction(mut file os.File, transaction []string) {
 }
 
 // generates some random bytes for random string
-fn get_random_bytes(n int) ?[]byte {
+fn get_random_bytes(n int) ?[]u8 {
 	random_bytes := crand.read(n) or { return err }
 	return random_bytes
 }
@@ -96,6 +96,8 @@ fn get_random_string() string {
 
 // generates some random floats
 fn get_random_float() f32 {
-	random := rand.f32n(100)
+	random := rand.f32n(100) or {
+		panic("Error while get random float!")
+	}
 	return random
 }

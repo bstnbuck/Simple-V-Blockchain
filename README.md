@@ -12,7 +12,7 @@ It is also written in Go: [**Simple Go Blockchain**](https://github.com/bstnbuck
 
 ## Usage & Build
 * Clone the Repo: `git clone https://github.com/bstnbuck/Simple-V-Blockchain.git`
-* Build with optional Garbage-Collector: ``` v -prod -gc boehm .```
+* Build: ``` v -prod .```
 
 ##### Execute the Blockchain:
 * If you want to execute the Blockchain run the program in console.
@@ -75,4 +75,3 @@ Press ENTER to continue...
 
 ### Information
 * The Proof-of-Work function uses a string with a incremented Nonce as hash operators.
-* **Important! Since V has no garbage collection, the consumption of RAM is constantly increasing, this should be observed permanently.** I will look for a solution in the near future.
