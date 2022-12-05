@@ -11,8 +11,6 @@ fn pow(text string, nulls string) (string, string, u64) {
 			return hashthex, text + nonce.str(), count
 		}
 
-		// println(hashthex)		// DEBUG
-		// hashthex.free()
 		nonce++ // increment nonce and counter by 1
 		count++
 	}

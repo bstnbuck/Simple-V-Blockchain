@@ -26,7 +26,7 @@ fn make_string_nulls(nulls int) string {
 	return strnulls
 }
 
-fn get_random_bytes(n int) ?[]u8 {
+fn get_random_bytes(n int) ![]u8 {
 	random_bytes := rand.read(n) or { return err }
 	return random_bytes
 }

@@ -20,20 +20,9 @@ fn make_block(nulls string, mut blockchain []Block) (string, Block, u64) {
 	block.index = i64(blockchain.len)
 	block.timestamp = time.now().str()
 	block.prev_hash_header = make_last_block_hash_header(blockchain[blockchain.len - 1])
-	/*
-	mut payload := ''
-	mut i := 1
-	for i <= 10 {
-		payload += ' ' + get_random_string()
-		if i == 5 {
-			payload += '\n'
-		}
-		i++
-	}
-	*/
 	block.payload = get_transactions()
 	block.block_hash = make_block_hash(block)
-	output := 'New Block Index:$block.index Timestamp:$block.timestamp \nHashPoW:$block.hash_pow \nText&Nonce:$block.text_nonce_pow \nPrevHashHeader:$block.prev_hash_header \nBlockHash:$block.block_hash \nData:\n$block.payload'
+	output := 'New Block Index:${block.index} Timestamp:${block.timestamp} \nHashPoW:${block.hash_pow} \nText&Nonce:${block.text_nonce_pow} \nPrevHashHeader:${block.prev_hash_header} \nBlockHash:${block.block_hash} \nData:\n${block.payload}'
 	return output, block, count
 }
 
@@ -43,10 +32,6 @@ fn make_block_hash(block Block) string {
 }
 
 fn make_last_block_hash_header(block Block) string {
-	/*
-	block.index.str() + block.timestamp.str() + block.hash_pow +
-		block.text_nonce_pow + block.prev_hash_header +
-	*/
 	return sha512.hexhash(block.block_hash)
 }
 

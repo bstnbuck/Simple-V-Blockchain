@@ -1,50 +1,24 @@
-New Block Index:1 Timestamp:2022-01-29 12:31:30 
-HashPoW:0000052a98d53011e42ebcd0e653a7dae4826f2556d7325fb757782554667b32d3466c9555f31533664cfe54332d53949703e52d3cb8b22869c941f4c353030b 
-Text&Nonce:ZTY=2400537610693511942 
-PrevHashHeader:7f7a91015bf2aab21b73267f750203930e14597edc7324d5478c602f64dbcd4252638fd4fcdb078747622566eb600a0850a602622bed1293ca3ff775b57642e2 
-BlockHash:41e681fbe2c1e839a4be4ed3b5f63eb7a7347fd4b93f36eab001dffb74670fa8e8132ca01f3e74b40dd064ffd987a70c3528f7df836fcc53c0cbce72ed7fae03 
+New Block Index:1 Timestamp:2022-12-05 12:31:27 
+HashPoW:0000b6d35fd1e88f63363f13adf019d3cfd79fa540879296d09c92e8c10aeca9ec05a1915c4cfb08a0ff37d23289b9f121c4439f76802db72c492fe800b2f0c5 
+Text&Nonce:nB8=11687486052302069634 
+PrevHashHeader:a237e535617aceaddc067461d79ddcd96f37ea17021503e748d4e52e80f9dc856bce26d21934d830db9efc8e948946cf5115c7c3756df041392a394b2abcfb57 
+BlockHash:0419b21e9454dbc6c9aa34d503a6b7213d3a14c7d7d11018fe35a08d9635aab6b9c155c4aa874299b2d72bd65988b69e6a2e6f0d025fbecf6b4952d91b4e5cb5 
 Data:
-New Transaction Timestamp:2022-01-29 12:31:02
- From:WzB4ZTUsIFld To:WzB4YjIsIDB4MTdd
- Transfer:72.06153
-New Transaction Timestamp:2022-01-29 12:31:02
- From:W0ssIDB4MDJd To:W0EsIDB4Yzld
- Transfer:55.81342
-New Transaction Timestamp:2022-01-29 12:31:02
- From:WzB4ZjAsIGRd To:W3gsIC5d
- Transfer:83.09029
-New Transaction Timestamp:2022-01-29 12:31:02
- From:WzMsIDB4Y2Zd To:W1csIDB4ZDdd
- Transfer:15.29201
-New Transaction Timestamp:2022-01-29 12:31:02
- From:W0osIDB4ZGFd To:WzB4OWIsIGBd
- Transfer:48.71656
+New Transaction Timestamp:2022-12-05 12:28:35
+ From:WzMsIDI3XQ== To:WzYxLCA4N10=
+ Transfer:75.58204
+New Transaction Timestamp:2022-12-05 12:28:35
+ From:WzI0NCwgMTYxXQ== To:WzExMywgMTY0XQ==
+ Transfer:96.19041
+New Transaction Timestamp:2022-12-05 12:28:35
+ From:WzIxNiwgMF0= To:WzI0OSwgMjBd
+ Transfer:11.74086
+New Transaction Timestamp:2022-12-05 12:28:35
+ From:WzE3NSwgMzhd To:WzExNiwgODVd
+ Transfer:56.17102
+New Transaction Timestamp:2022-12-05 12:28:35
+ From:Wzg0LCAyNTVd To:WzEzNSwgNF0=
+ Transfer:84.28856
 
-Time to make new Block: 7645ms => 7sec
-Hashrate: 201 H/ms (Hashes per millisecond)
-
-New Block Index:2 Timestamp:2022-01-29 12:31:44 
-HashPoW:0000063919d25473793ea4bb80229a3fec4e4ae967410900e53f1e2160312b89a23de33e9f335df626c665f00b8c01ed72ae477c5c93f604f824d5f2fae19736 
-Text&Nonce:SLA=18431061869974995546 
-PrevHashHeader:a821d99978e50e12487f4fb93611faee2958ba483dc3d64071846a81921acde11f0b3943ee7e9203b5c7d15c7c6a936844ba54c020359cfdd85131cff146d1b0 
-BlockHash:a4efd4d23e463295cafec5eed8cda5ef8c03a6924f301a6d4e0eebdbe7c37d27cb0f223e366eaeea18403fff66e715321a769da8c4b1183242517f1f85059c00 
-Data:
-New Transaction Timestamp:2022-01-29 12:31:02
- From:WzB4ZDQsIDpd To:W28sIDB4YjJd
- Transfer:50.73519
-New Transaction Timestamp:2022-01-29 12:31:02
- From:WyssIDB4MWVd To:WzcsIDB4Yjdd
- Transfer:8.7416
-New Transaction Timestamp:2022-01-29 12:31:02
- From:W1EsIFBd To:WzB4YTAsIDJd
- Transfer:75.36446
-New Transaction Timestamp:2022-01-29 12:31:02
- From:WzB4ZjgsIDB4YjVd To:WzB4MTUsIFpd
- Transfer:56.07489
-New Transaction Timestamp:2022-01-29 12:31:02
- From:WzB4YTIsIHhd To:W3AsIEBd
- Transfer:75.22391
-
-Time to make new Block: 14274ms => 14sec
-Hashrate: 238 H/ms (Hashes per millisecond)
-
+Time to make new Block: 71ms => 0sec
+Hashrate: 211 H/ms (Hashes per millisecond)

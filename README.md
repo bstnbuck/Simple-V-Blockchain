@@ -12,7 +12,7 @@ It is also written in Go: [**Simple Go Blockchain**](https://github.com/bstnbuck
 
 ## Usage & Build
 * Clone the Repo: `git clone https://github.com/bstnbuck/Simple-V-Blockchain.git`
-* Build: ``` v -prod .```
+* Build: ``` v -prod -cc {gcc, msvc, tcc} .```
 
 ##### Execute the Blockchain:
 * If you want to execute the Blockchain run the program in console.
