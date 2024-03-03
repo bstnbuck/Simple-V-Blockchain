@@ -61,7 +61,7 @@ fn get_transactions() string {
 		output += lines[progress] + '\n'
 		progress++
 	}
-	text = lines[counter..lines.len]
+	text = lines[counter..lines.len].clone()
 
 	// create file new (clear it) and move all others that follow after the 10 transactions into it
 	os.create(filename) or {
