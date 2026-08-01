@@ -26,15 +26,10 @@ fn make_string_nulls(nulls int) string {
 	return strnulls
 }
 
-fn get_random_bytes(n int) ![]u8 {
-	random_bytes := rand.read(n) or { return err }
-	return random_bytes
-}
-
 fn get_random_string() string {
-	bytes := get_random_bytes(2) or {
+    mut bytes := []u8{len: 2}
+	rand.read(mut bytes) or {
 		println(err)
-		return ''
 	}
 	random_string := base64.encode(bytes)
 	return random_string
