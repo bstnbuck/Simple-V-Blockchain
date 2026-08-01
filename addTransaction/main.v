@@ -77,19 +77,13 @@ fn generate_transactions(times int) []string {
 fn add_transaction(mut file os.File, transaction []string) {
 }
 
-// generates some random bytes for random string
-fn get_random_bytes(n int) ![]u8 {
-	random_bytes := crand.read(n) or { return err }
-	return random_bytes
-}
-
 // generates some random string
 fn get_random_string() string {
-	bytes := get_random_bytes(2) or {
+    mut bytes := []u8{len: 2}
+	crand.read(mut bytes) or {
 		println(err)
-		return ''
 	}
-	random_string := base64.encode_str(bytes.str())
+	random_string := base64.encode(bytes)
 	return random_string
 }
 
